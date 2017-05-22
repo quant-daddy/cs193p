@@ -444,13 +444,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZQ-Ja-Z9n" customClass="GraphView" customModule="calculator">
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oZQ-Ja-Z9n" customClass="GraphView" customModule="calculator">
                                 <rect key="frame" x="16" y="20" width="343" height="639"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oZQ-Ja-Z9n" firstAttribute="top" secondItem="Hsy-Rs-av6" secondAttribute="bottom" id="FoH-RO-06k"/>
+                            <constraint firstItem="yVi-58-ULB" firstAttribute="top" secondItem="oZQ-Ja-Z9n" secondAttribute="bottom" constant="8" symbolic="YES" id="IDA-cA-Hih"/>
+                            <constraint firstItem="oZQ-Ja-Z9n" firstAttribute="leading" secondItem="en2-mL-Yhk" secondAttribute="leadingMargin" id="hWd-Lj-vs2"/>
+                            <constraint firstItem="oZQ-Ja-Z9n" firstAttribute="trailing" secondItem="en2-mL-Yhk" secondAttribute="trailingMargin" id="uN3-68-ex4"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="graphView" destination="oZQ-Ja-Z9n" id="Xct-uh-yCl"/>
